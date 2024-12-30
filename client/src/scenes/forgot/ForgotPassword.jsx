@@ -17,7 +17,7 @@ const ForgotPassword = () => {
 
    try {
      const response = await axios.post(
-       "http://localhost:3001/auth/send-resetOTP",
+       "https://social-mediabackend-1ish.onrender.com/auth/send-resetOTP",
        { email }
      );
 

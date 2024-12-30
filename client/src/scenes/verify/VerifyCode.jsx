@@ -20,7 +20,7 @@ const VerifyCode = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/auth/reset-password",
+        "https://social-mediabackend-1ish.onrender.com/auth/reset-password",
         {
           email,
           password,
