@@ -1,0 +1,113 @@
+/* General Container */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+}
+
+/* Card Design */
+.auth-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title and Description */
+.auth-title {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.auth-description {
+  font-size: 0.95rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.auth-form .form-group {
+  margin-bottom: 20px;
+}
+
+.auth-form label {
+  font-size: 0.9rem;
+  color: #555;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.auth-form input:focus {
+  border-color: #4facfe;
+  outline: none;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.4);
+}
+
+/* Button */
+.auth-button {
+  width: 100%;
+  background: #4facfe;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.auth-button:hover {
+  background: #00f2fe;
+  transform: scale(1.02);
+}
+
+.auth-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Success and Error Messages */
+.success-message {
+  font-size: 0.9rem;
+  color: #28a745;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.error-message {
+  font-size: 0.9rem;
+  color: #dc3545;
+  text-align: center;
+  margin-top: 10px;
+}

@@ -1,0 +1,130 @@
+/* Container Styling */
+.forgot-password-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Card Design */
+.forgot-password-card {
+  background: white;
+  border-radius: 12px;
+  padding: 30px 20px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Title and Description */
+.forgot-title {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.forgot-description {
+  font-size: 0.95rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.forgot-form .form-group {
+  margin-bottom: 20px;
+}
+
+.forgot-form label {
+  font-size: 0.9rem;
+  color: #555;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.forgot-form input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.forgot-form input:focus {
+  border-color: #4facfe;
+  outline: none;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.4);
+}
+
+/* Button Styling */
+.forgot-button {
+  width: 100%;
+  background: #4facfe;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.forgot-button:hover {
+  background: #00f2fe;
+  transform: scale(1.02);
+}
+
+.forgot-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Messages */
+.success-message {
+  font-size: 0.9rem;
+  color: #28a745;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.error-message {
+  font-size: 0.9rem;
+  color: #dc3545;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Footer Link */
+.forgot-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.forgot-footer a {
+  font-size: 0.9rem;
+  color: #4facfe;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.forgot-footer a:hover {
+  color: #00f2fe;
+}
